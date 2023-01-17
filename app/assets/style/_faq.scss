@@ -1,0 +1,43 @@
+.faq{
+    &-block{
+        margin-top: 96px;
+        margin-bottom: 80px;
+        max-width: 66.6667%;
+        @include pad(){
+            margin-top: 80px;
+            max-width: 100%;
+        }
+        @include mobile(){
+            margin-top: 40px;
+            margin-bottom: 64px;
+        }
+        h3{
+            border-left: 8px solid #9F1213;
+            padding-left: 16px;
+            @include mobile(){
+                font-size: 24px;
+            }
+        }
+        h5{
+            margin-top: 32px;
+            @include mobile(){
+                margin-top: 24px;
+            }
+        }
+    }
+    &-qa{
+        margin-top: 24px;
+        h6{
+            font-weight: bold;
+        }
+        li{
+            margin-top: 32px;
+            @include mobile(){
+                margin-top: 24px;
+            }
+            p{
+                margin-top: 8px;
+            }
+        }
+    }
+}
