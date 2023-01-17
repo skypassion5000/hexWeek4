@@ -1362,6 +1362,7 @@ body {
       .menu li .menu-padding {
         padding: 12px 0px; } }
 
+/* header end */
 /* footer */
 .footer {
   background-color: #AA0601;
@@ -1495,5 +1496,7 @@ body {
         padding: 0px; }
       .copyright li .c-padding {
         padding: 0px; } }
+
+/* footer end */
 
 /*# sourceMappingURL=all.css.map */
