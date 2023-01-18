@@ -1,0 +1,147 @@
+/* location.scss */
+.location{
+    &-block{
+        margin-top: 96px;
+        margin-bottom: 80px; 
+        h3{
+            border-left: 8px solid #9F1213;
+            padding-left: 16px;
+            @include mobile(){
+                font-size: 24px;
+            }
+        }
+        .shop{
+            margin-top: 33px;
+            @include mobile(){
+                margin-top: 24px;
+                display: flex;
+                align-items: center;
+            }
+            h5{
+                font-weight: normal;
+                @include mobile(){
+                    font-size: 16px;
+                }
+            }
+            .select-control{
+                font-size: 18px;
+                color: #495057;
+                opacity: 0.75;
+                padding-left: 12px;
+                padding-right: 12px;
+                width: 25%;
+                @include pad(){
+                    width: ( 304px / 696px ) * 100%;
+                }
+                @include mobile(){
+                    width: ( 276px / 351px ) * 100%;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                }
+            }
+        }
+        @include pad{
+            margin-top: 80px;
+            margin-bottom: 56px; //80px-24px
+        }
+        @include mobile(){
+            margin-top: 40px;
+            margin-bottom: 40px; //64px-24px
+        }
+    }
+    &-content{
+        margin-top: 41px;
+        display: flex;
+        justify-content: space-between;
+        @include pad(){
+            flex-wrap: wrap;
+            li{
+                margin-bottom: 24px;
+            }
+        }
+        @include mobile(){
+            margin-top: 24px;
+        }
+    }
+    &-card{
+        width: ( 526px / 1296px ) * 100%;
+        h5{
+            padding: 8px 24px;
+            border: 1px solid #00000020;
+            font-weight: normal;
+            color: #212529;
+        }
+        ul{
+            padding-top: 16px;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-bottom: 8px;
+            border: 1px solid #00000020;
+            color: #212529;
+            font-size: 20px;
+            li{
+                display: flex;
+                margin-bottom: 8px;
+            }
+            span{
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+            }
+            a{
+                color: #212529;
+            }
+            a:hover{
+                color: $primary;
+            }
+        }
+        .btn-card{
+            width: 100%;
+            border: 1px solid #CED4DA;
+            background: $black;
+            text-align: center;
+            cursor: pointer;
+            a{
+                color: $white;
+                display: block;
+                padding: 20px 6px;
+                font-size: 19px;
+                line-height: 27px;
+            }
+        }
+        @include pad(){
+            width: ( 337px / 696px ) * 100%;
+        }
+        @include mobile(){
+            width: 100%;
+        }
+    }
+    &-map{
+        // width: 58%;
+        width: ( 746px / 1296px ) * 100%;
+        @include pad(){
+            display: none;
+        }
+        @include mobile(){
+            width: 100%;
+        }
+    }
+}
+.pad-show{
+    display: none;
+    @include pad(){
+        display: block;
+    }
+    @include mobile(){
+        display: none;
+    }
+}
+.pad-nshow{
+    @include pad(){
+        display: none;
+    }
+    @include mobile(){
+        display: block;
+    }
+}
+/* location.scss end */
