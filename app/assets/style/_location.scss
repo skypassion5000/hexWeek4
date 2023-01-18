@@ -12,9 +12,9 @@
         }
         .shop{
             margin-top: 33px;
+            display: flex;
             @include mobile(){
                 margin-top: 24px;
-                display: flex;
                 align-items: center;
             }
             h5{
@@ -29,12 +29,11 @@
                 opacity: 0.75;
                 padding-left: 12px;
                 padding-right: 12px;
-                width: 25%;
-                @include pad(){
-                    width: ( 304px / 696px ) * 100%;
-                }
+                // width: 25%;
+                width: 304px;
                 @include mobile(){
-                    width: ( 276px / 351px ) * 100%;
+                    // width: ( 276px / 351px ) * 100%;
+                    max-width: 276px;
                     padding-top: 6px;
                     padding-bottom: 6px;
                 }
