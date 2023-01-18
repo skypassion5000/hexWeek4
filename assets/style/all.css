@@ -1860,7 +1860,15 @@ p {
 /* location.scss */
 .location-block {
   margin-top: 96px;
-  margin-bottom: 80px; }
+  margin-bottom: 32px; }
+  @media (max-width: 992px) {
+    .location-block {
+      margin-top: 80px;
+      margin-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .location-block {
+      margin-top: 40px;
+      margin-bottom: 40px; } }
   .location-block h3 {
     border-left: 8px solid #9F1213;
     padding-left: 16px; }
@@ -1895,14 +1903,6 @@ p {
           max-width: 276px;
           padding-top: 6px;
           padding-bottom: 6px; } }
-  @media (max-width: 992px) {
-    .location-block {
-      margin-top: 80px;
-      margin-bottom: 56px; } }
-  @media (max-width: 767px) {
-    .location-block {
-      margin-top: 40px;
-      margin-bottom: 40px; } }
 
 .location-content {
   margin-top: 41px;
@@ -1912,6 +1912,8 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .location-content li {
+    margin-bottom: 48px; }
   @media (max-width: 992px) {
     .location-content {
       -ms-flex-wrap: wrap;
@@ -1924,6 +1926,22 @@ p {
 
 .location-card {
   width: 40.58642%; }
+  @media (max-width: 992px) {
+    .location-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .location-card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; } }
   .location-card h5 {
     padding: 8px 24px;
     border: 1px solid #00000020;
@@ -1950,6 +1968,18 @@ p {
       color: #212529; }
     .location-card ul a:hover {
       color: #AA0601; }
+  @media (max-width: 992px) {
+    .location-card img {
+      width: 48.41954%; } }
+  @media (max-width: 767px) {
+    .location-card img {
+      width: 100%; } }
+  @media (max-width: 992px) {
+    .location-card .card-body {
+      width: 48.41954%; } }
+  @media (max-width: 767px) {
+    .location-card .card-body {
+      width: 100%; } }
   .location-card .btn-card {
     width: 100%;
     border: 1px solid #CED4DA;
@@ -1962,38 +1992,43 @@ p {
       padding: 20px 6px;
       font-size: 19px;
       line-height: 27px; }
+
+.location .content-shop {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start; }
+
+.location .card-shop {
+  width: 32.09877%;
+  margin-right: 8px;
+  margin-left: 8px; }
   @media (max-width: 992px) {
-    .location-card {
-      width: 48.41954%; } }
+    .location .card-shop {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 48.41954%;
+      margin-right: 5px;
+      margin-left: 5px; }
+      .location .card-shop img {
+        width: 100%; } }
   @media (max-width: 767px) {
-    .location-card {
-      width: 100%; } }
+    .location .card-shop {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0; } }
 
 .location-map {
   width: 57.56173%; }
   @media (max-width: 992px) {
     .location-map {
-      display: none; } }
+      width: 100%; } }
   @media (max-width: 767px) {
     .location-map {
       width: 100%; } }
-
-.pad-show {
-  display: none; }
-  @media (max-width: 992px) {
-    .pad-show {
-      display: block; } }
-  @media (max-width: 767px) {
-    .pad-show {
-      display: none; } }
-
-@media (max-width: 992px) {
-  .pad-nshow {
-    display: none; } }
-
-@media (max-width: 767px) {
-  .pad-nshow {
-    display: block; } }
 
 /* location.scss end */
 
