@@ -2,7 +2,15 @@
 .location{
     &-block{
         margin-top: 96px;
-        margin-bottom: 80px; 
+        margin-bottom: 32px; //80px-48px
+        @include pad{
+            margin-top: 80px;
+            margin-bottom: 56px; //80px-24px
+        }
+        @include mobile(){
+            margin-top: 40px;
+            margin-bottom: 40px; //64px-24px
+        }
         h3{
             border-left: 8px solid #9F1213;
             padding-left: 16px;
@@ -39,19 +47,14 @@
                 }
             }
         }
-        @include pad{
-            margin-top: 80px;
-            margin-bottom: 56px; //80px-24px
-        }
-        @include mobile(){
-            margin-top: 40px;
-            margin-bottom: 40px; //64px-24px
-        }
     }
     &-content{
         margin-top: 41px;
         display: flex;
         justify-content: space-between;
+        li{
+            margin-bottom: 48px;
+        }
         @include pad(){
             flex-wrap: wrap;
             li{
@@ -64,6 +67,16 @@
     }
     &-card{
         width: ( 526px / 1296px ) * 100%;
+        @include pad(){
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        @include mobile(){
+            // display: block;
+            flex-direction: column;
+            width: 100%;
+        }
         h5{
             padding: 8px 24px;
             border: 1px solid #00000020;
@@ -94,6 +107,22 @@
                 color: $primary;
             }
         }
+        img{
+            @include pad(){
+                width: ( 337px / 696px ) * 100%;
+            }
+            @include mobile(){
+                width: 100%;
+            }
+        }
+        .card-body{
+            @include pad(){
+                width: ( 337px / 696px ) * 100%;
+            }
+            @include mobile(){
+                width: 100%;
+            }
+        }
         .btn-card{
             width: 100%;
             border: 1px solid #CED4DA;
@@ -107,40 +136,45 @@
                 font-size: 19px;
                 line-height: 27px;
             }
+            a:hover{
+                
+            }
         }
+    }
+    //直接蓋掉上面card的排版設定
+    .content-shop{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .card-shop{
+        width: ( 416px / 1296px ) * 100%;
+        margin-right: 8px;
+        margin-left: 8px;
         @include pad(){
+            // display: block;
+            flex-direction: column;
             width: ( 337px / 696px ) * 100%;
+            margin-right: 5px;
+            margin-left: 5px;
+            img{
+                width: 100%;
+            }
         }
         @include mobile(){
             width: 100%;
+            margin-right: 0;
+            margin-left: 0;
         }
     }
     &-map{
         // width: 58%;
         width: ( 746px / 1296px ) * 100%;
         @include pad(){
-            display: none;
+            width: 100%;
         }
         @include mobile(){
             width: 100%;
         }
-    }
-}
-.pad-show{
-    display: none;
-    @include pad(){
-        display: block;
-    }
-    @include mobile(){
-        display: none;
-    }
-}
-.pad-nshow{
-    @include pad(){
-        display: none;
-    }
-    @include mobile(){
-        display: block;
     }
 }
 /* location.scss end */
