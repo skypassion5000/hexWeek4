@@ -1868,13 +1868,13 @@ p {
       .location-block h3 {
         font-size: 24px; } }
   .location-block .shop {
-    margin-top: 33px; }
+    margin-top: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     @media (max-width: 767px) {
       .location-block .shop {
         margin-top: 24px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
@@ -1889,13 +1889,10 @@ p {
       opacity: 0.75;
       padding-left: 12px;
       padding-right: 12px;
-      width: 25%; }
-      @media (max-width: 992px) {
-        .location-block .shop .select-control {
-          width: 43.67816%; } }
+      width: 304px; }
       @media (max-width: 767px) {
         .location-block .shop .select-control {
-          width: 78.63248%;
+          max-width: 276px;
           padding-top: 6px;
           padding-bottom: 6px; } }
   @media (max-width: 992px) {
