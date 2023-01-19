@@ -59,8 +59,6 @@
     margin-right: -12px;
     @include mobile(){
         margin-top: 24px;
-        margin-left: 0px;
-        margin-right: 0px;
     }
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +100,7 @@
     }
     @include mobile(){
         width: 100%;
-        margin: 0px 0px 24px;
+        margin: 0px 12px 24px;
     }
 }
 .pagination{

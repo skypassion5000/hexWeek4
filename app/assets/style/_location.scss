@@ -145,25 +145,29 @@
     .content-shop{
         flex-wrap: wrap;
         justify-content: start;
+        margin-right: -12px;
+        margin-left: -12px;
     }
     .card-shop{
-        width: ( 416px / 1296px ) * 100%;
-        margin-right: 8px;
-        margin-left: 8px;
+        // width: ( 416px / 1296px ) * 100%;
+        // margin-right: 8px;
+        // margin-left: 8px;
+        width: calc( 100% / 3 - 24px);
+        margin-right: 12px;
+        margin-left: 12px;
         @include pad(){
             // display: block;
             flex-direction: column;
-            width: ( 337px / 696px ) * 100%;
-            margin-right: 5px;
-            margin-left: 5px;
+            // width: ( 337px / 696px ) * 100%;
+            // margin-right: 5px;
+            // margin-left: 5px;
+            width: calc( 100% / 2 - 24px);
             img{
                 width: 100%;
             }
         }
         @include mobile(){
             width: 100%;
-            margin-right: 0;
-            margin-left: 0;
         }
     }
     &-map{
