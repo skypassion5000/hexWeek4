@@ -51,7 +51,9 @@
     &-content{
         margin-top: 41px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-right: -12px;
+        margin-left: -12px;
         li{
             margin-bottom: 48px;
         }
@@ -66,7 +68,10 @@
         }
     }
     &-card{
-        width: ( 526px / 1296px ) * 100%;
+        // width: ( 526px / 1296px ) * 100%;
+        width: calc( 100% / 12 * 5 - 24px);
+        margin-left: 12px;
+        margin-right: 12px;
         @include pad(){
             display: flex;
             justify-content: space-between;
@@ -109,7 +114,8 @@
         }
         img{
             @include pad(){
-                width: ( 337px / 696px ) * 100%;
+                // width: ( 337px / 696px ) * 100%;
+                width: calc( 100% / 2 - 12px );
             }
             @include mobile(){
                 width: 100%;
@@ -117,7 +123,8 @@
         }
         .card-body{
             @include pad(){
-                width: ( 337px / 696px ) * 100%;
+                // width: ( 337px / 696px ) * 100%;
+                width: calc( 100% / 2 - 12px );
             }
             @include mobile(){
                 width: 100%;
@@ -137,17 +144,17 @@
                 line-height: 27px;
             }
             a:hover{
-                
+                background-color: #650300;
             }
         }
     }
     //直接蓋掉上面card的排版設定
-    .content-shop{
-        flex-wrap: wrap;
-        justify-content: start;
-        margin-right: -12px;
-        margin-left: -12px;
-    }
+    // .content-shop{
+    //     flex-wrap: wrap;
+    //     justify-content: start;
+    //     margin-right: -12px;
+    //     margin-left: -12px;
+    // }
     .card-shop{
         // width: ( 416px / 1296px ) * 100%;
         // margin-right: 8px;
@@ -162,9 +169,9 @@
             // margin-right: 5px;
             // margin-left: 5px;
             width: calc( 100% / 2 - 24px);
-            img{
-                width: 100%;
-            }
+            // img{
+            //     width: 100%;
+            // }
         }
         @include mobile(){
             width: 100%;
@@ -172,7 +179,10 @@
     }
     &-map{
         // width: 58%;
-        width: ( 746px / 1296px ) * 100%;
+        // width: ( 746px / 1296px ) * 100%;
+        width: calc( 100% / 12 * 7 - 24px);
+        margin-right: 12px;
+        margin-left: 12px;
         @include pad(){
             width: 100%;
         }
