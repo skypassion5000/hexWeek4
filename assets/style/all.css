@@ -2007,28 +2007,26 @@ p {
       flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start; }
+          justify-content: start;
+  margin-right: -12px;
+  margin-left: -12px; }
 
 .location .card-shop {
-  width: 32.09877%;
-  margin-right: 8px;
-  margin-left: 8px; }
+  width: calc( 100% / 3 - 24px);
+  margin-right: 12px;
+  margin-left: 12px; }
   @media (max-width: 992px) {
     .location .card-shop {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      width: 48.41954%;
-      margin-right: 5px;
-      margin-left: 5px; }
+      width: calc( 100% / 2 - 24px); }
       .location .card-shop img {
         width: 100%; } }
   @media (max-width: 767px) {
     .location .card-shop {
-      width: 100%;
-      margin-right: 0;
-      margin-left: 0; } }
+      width: 100%; } }
 
 .location-map {
   width: 57.56173%; }
@@ -2101,9 +2099,7 @@ p {
       flex-wrap: wrap; }
   @media (max-width: 767px) {
     .product-opCard {
-      margin-top: 24px;
-      margin-left: 0px;
-      margin-right: 0px; } }
+      margin-top: 24px; } }
   .product-opCard .opCard-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2142,7 +2138,7 @@ p {
   @media (max-width: 767px) {
     .product-opCard-item {
       width: 100%;
-      margin: 0px 0px 24px; } }
+      margin: 0px 12px 24px; } }
 
 .pagination {
   display: -webkit-box;
