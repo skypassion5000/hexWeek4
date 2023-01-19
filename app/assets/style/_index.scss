@@ -58,7 +58,7 @@ p{
     }
     @include mobile(){
         font-size: 20px;
-        font-weight: medium;
+        font-weight: 500; //medium
         margin-top: 8px;
     }
 }
@@ -272,7 +272,7 @@ p{
         padding: 16px;
         h6{
             font-size: 16px;
-            font-weight: medium;
+            font-weight: 500; //medium
         }
         p{
             margin-top: 8px;

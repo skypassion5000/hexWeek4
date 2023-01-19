@@ -16,6 +16,7 @@ $mobile:767px;
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 12px;
+    // border: 1px solid #000;
     // 平板 768
     @include pad{
         max-width: 720px;
@@ -38,5 +39,15 @@ $mobile:767px;
     // 手機 375
     @include mobile{
         padding: 0px;
+    }
+}
+.p-container{
+    // 桌機 1920
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include pad{
+        max-width: 100%;
+        padding: 0;
     }
 }
