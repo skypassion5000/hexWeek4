@@ -1918,9 +1918,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px; }
   .location-content li {
     margin-bottom: 48px; }
   @media (max-width: 992px) {
@@ -1934,7 +1935,9 @@ p {
       margin-top: 24px; } }
 
 .location-card {
-  width: 40.58642%; }
+  width: calc( 100% / 12 * 5 - 24px);
+  margin-left: 12px;
+  margin-right: 12px; }
   @media (max-width: 992px) {
     .location-card {
       display: -webkit-box;
@@ -1979,13 +1982,13 @@ p {
       color: #AA0601; }
   @media (max-width: 992px) {
     .location-card img {
-      width: 48.41954%; } }
+      width: calc( 100% / 2 - 12px); } }
   @media (max-width: 767px) {
     .location-card img {
       width: 100%; } }
   @media (max-width: 992px) {
     .location-card .card-body {
-      width: 48.41954%; } }
+      width: calc( 100% / 2 - 12px); } }
   @media (max-width: 767px) {
     .location-card .card-body {
       width: 100%; } }
@@ -2001,15 +2004,8 @@ p {
       padding: 20px 6px;
       font-size: 19px;
       line-height: 27px; }
-
-.location .content-shop {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  margin-right: -12px;
-  margin-left: -12px; }
+    .location-card .btn-card a:hover {
+      background-color: #650300; }
 
 .location .card-shop {
   width: calc( 100% / 3 - 24px);
@@ -2021,15 +2017,15 @@ p {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      width: calc( 100% / 2 - 24px); }
-      .location .card-shop img {
-        width: 100%; } }
+      width: calc( 100% / 2 - 24px); } }
   @media (max-width: 767px) {
     .location .card-shop {
       width: 100%; } }
 
 .location-map {
-  width: 57.56173%; }
+  width: calc( 100% / 12 * 7 - 24px);
+  margin-right: 12px;
+  margin-left: 12px; }
   @media (max-width: 992px) {
     .location-map {
       width: 100%; } }
