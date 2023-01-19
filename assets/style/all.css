@@ -89,6 +89,15 @@ img {
     .h-container {
       padding: 0px; } }
 
+.p-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px; }
+  @media (max-width: 992px) {
+    .p-container {
+      max-width: 100%;
+      padding: 0; } }
+
 .text-sm {
   font-size: 14px; }
 
@@ -1554,7 +1563,7 @@ p {
   @media (max-width: 767px) {
     .button {
       font-size: 20px;
-      font-weight: medium;
+      font-weight: 500;
       margin-top: 8px; } }
 
 /* feature */
@@ -1752,7 +1761,7 @@ p {
   padding: 16px; }
   .comment-info h6 {
     font-size: 16px;
-    font-weight: medium; }
+    font-weight: 500; }
   .comment-info p {
     margin-top: 8px; }
   .comment-info span {
@@ -2031,5 +2040,134 @@ p {
       width: 100%; } }
 
 /* location.scss end */
+/* product.scss */
+.product-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .product-banner img {
+    width: 50%; }
+
+.product-content {
+  padding: 80px 0px; }
+  @media (max-width: 767px) {
+    .product-content {
+      padding-top: 40px;
+      padding-bottom: 64px; } }
+  .product-content .op-titleEN {
+    text-align: center;
+    font-size: 42px;
+    line-height: 63px;
+    font-weight: 500; }
+  .product-content .op-titleTW {
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal; }
+
+.nav-glass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .nav-glass li {
+    width: 33.33333%;
+    text-align: center;
+    border: 1px solid #DCDCDC; }
+    .nav-glass li a {
+      display: block;
+      font-size: 32px;
+      font-weight: 500;
+      color: #000000;
+      padding-top: 24px;
+      padding-bottom: 24px; }
+      @media (max-width: 992px) {
+        .nav-glass li a {
+          font-size: 24px; } }
+      @media (max-width: 767px) {
+        .nav-glass li a {
+          font-size: 16px; } }
+    .nav-glass li a:hover {
+      border-bottom: 8px solid #AA0601; }
+    .nav-glass li .active {
+      border-bottom: 8px solid #AA0601; }
+
+.product-opCard {
+  margin-top: 32px;
+  margin-left: -12px;
+  margin-right: -12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (max-width: 767px) {
+    .product-opCard {
+      margin-top: 24px;
+      margin-left: 0px;
+      margin-right: 0px; } }
+  .product-opCard .opCard-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .product-opCard .opCard-body h5 {
+      font-weight: normal; }
+    .product-opCard .opCard-body span {
+      color: #AA0601;
+      font-size: 24px;
+      font-weight: 500; }
+  .product-opCard .opCard-colorList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .product-opCard .opCard-colorList li {
+      width: 24px;
+      height: 24px; }
+  .product-opCard .color-1 {
+    background-color: #5F3E2D;
+    border-radius: 4px;
+    margin-right: 8px; }
+  .product-opCard .color-2 {
+    background-color: #B75929;
+    border-radius: 4px; }
+
+.product-opCard-item {
+  width: calc( 100% / 4 - 24px);
+  margin: 0px 12px 80px; }
+  @media (max-width: 992px) {
+    .product-opCard-item {
+      width: calc( 100% / 2 - 24px);
+      margin: 0px 12px 40px; } }
+  @media (max-width: 767px) {
+    .product-opCard-item {
+      width: 100%;
+      margin: 0px 0px 24px; } }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 992px) {
+    .pagination {
+      margin-top: 40px; } }
+  .pagination .page-item {
+    border: 1px solid #555555; }
+    .pagination .page-item a {
+      display: block;
+      color: #555555;
+      font-size: 19px;
+      line-height: 29px;
+      padding: 11px 16px; }
+      @media (max-width: 767px) {
+        .pagination .page-item a {
+          font-size: 16px;
+          padding: 11px 13px; } }
+    .pagination .page-item .page-active {
+      background-color: #000000;
+      color: #FFFFFF; }
 
 /*# sourceMappingURL=all.css.map */
