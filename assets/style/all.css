@@ -69,8 +69,7 @@ img {
 .container {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 12px;
-  border: 1px solid #000; }
+  padding: 0 12px; }
   @media (max-width: 992px) {
     .container {
       max-width: 720px; } }
@@ -2193,11 +2192,20 @@ p {
     font-weight: bold;
     margin-left: -24px;
     margin-right: -24px; }
+    @media (max-width: 767px) {
+      .breadcrumbs-menu {
+        font-size: 16px;
+        margin-left: -12px;
+        margin-right: -12px; } }
     .breadcrumbs-menu a {
       color: #FFFFFF; }
     .breadcrumbs-menu li {
       margin-left: 24px;
       margin-right: 24px; }
+      @media (max-width: 767px) {
+        .breadcrumbs-menu li {
+          margin-left: 12px;
+          margin-right: 12px; } }
   .breadcrumbs-search {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2211,6 +2219,9 @@ p {
     .breadcrumbs-search span {
       color: #FFFFFF;
       font-size: 29px; }
+    @media (max-width: 767px) {
+      .breadcrumbs-search {
+        display: none; } }
 
 .blog-block {
   padding-top: 96px;
@@ -2230,6 +2241,10 @@ p {
       .blog-block h3 {
         font-size: 24px;
         font-weight: bold; } }
+  @media (max-width: 767px) {
+    .blog-block h5 {
+      font-size: 16px;
+      font-weight: 500; } }
   .blog-block .pagination {
     margin-top: 124px; }
     @media (max-width: 992px) {
@@ -2329,5 +2344,127 @@ p {
         margin-bottom: 24px; } }
 
 /* blog.scss end */
+/* blog-detail.scss */
+.blog-title {
+  margin-top: 24px; }
+  @media (max-width: 992px) {
+    .blog-title {
+      margin-top: 8px; } }
+  @media (max-width: 767px) {
+    .blog-title {
+      margin-top: 16px; } }
+  .blog-title p span {
+    color: #AA0601; }
+  @media (max-width: 767px) {
+    .blog-title .blog-tag {
+      font-size: 16px; } }
+
+.blog-tag {
+  font-size: 24px;
+  font-weight: bold;
+  color: #AA0601; }
+
+.blog-detail {
+  padding-bottom: 80px; }
+  @media (max-width: 767px) {
+    .blog-detail {
+      padding-bottom: 64px; } }
+  .blog-detail-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: 8px; }
+  .blog-detail-body {
+    width: calc(100% / 12 * 8 - 24px);
+    margin-left: 12px;
+    margin-right: 12px; }
+    @media (max-width: 992px) {
+      .blog-detail-body {
+        width: calc(100% / 12 * 9 - 24px); } }
+    @media (max-width: 767px) {
+      .blog-detail-body {
+        width: 100%; } }
+    .blog-detail-body h3 {
+      font-weight: normal; }
+      @media (max-width: 767px) {
+        .blog-detail-body h3 {
+          font-size: 24px; } }
+    .blog-detail-body h5 {
+      font-weight: 500; }
+      @media (max-width: 767px) {
+        .blog-detail-body h5 {
+          font-size: 16px; } }
+    .blog-detail-body p {
+      text-align: justify; }
+  .blog-detail-aside {
+    width: calc(100% / 12 * 4 - 24px);
+    margin-left: 12px;
+    margin-right: 12px; }
+    @media (max-width: 992px) {
+      .blog-detail-aside {
+        width: calc(100% / 12 * 3 - 24px); } }
+    @media (max-width: 767px) {
+      .blog-detail-aside {
+        display: none; } }
+    .blog-detail-aside h4 {
+      color: #AA0601;
+      font-weight: bold; }
+      .blog-detail-aside h4 span {
+        font-size: 48px;
+        vertical-align: text-top; }
+    @media (max-width: 992px) {
+      .blog-detail-aside .blog-tag {
+        font-size: 16px; } }
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+  border-bottom: 1px solid #707070; }
+  .share p {
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 8px; }
+  .share img {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    margin-right: 8px; }
+  @media (max-width: 767px) {
+    .share {
+      display: none; } }
+
+.page-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-select .page-select-previous {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #000; }
+  .page-select .page-select-next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #000; }
+  @media (max-width: 767px) {
+    .page-select {
+      display: none; } }
+
+/* blog-detail.scss end */
 
 /*# sourceMappingURL=all.css.map */
