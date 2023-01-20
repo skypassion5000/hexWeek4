@@ -143,9 +143,12 @@
                 font-size: 19px;
                 line-height: 27px;
             }
-            a:hover{
-                background-color: #650300;
-            }
+            // a:hover{
+            //     background-color: #650300;
+            // }
+        }
+        .btn-card:hover{
+            background-color: #650300;
         }
     }
     //直接蓋掉上面card的排版設定
