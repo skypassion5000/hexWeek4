@@ -1,0 +1,153 @@
+/* blog.scss */
+.breadcrumbs{
+    background-color: #650300;
+    &-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    &-menu{
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: -24px;
+        margin-right: -24px;
+        a{
+            color: $white;
+        }
+        li{
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+    }
+    &-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            color: $white;
+            font-size: 29px;
+        }
+    }
+}
+.blog{
+    &-block{
+        padding-top: 96px;
+        padding-bottom: 80px;
+        @include pad(){
+            padding-top: 80px;
+        }
+        @include mobile(){
+            padding-top: 40px;
+            padding-bottom: 64px;
+        }
+        h3{
+            font-weight: normal;
+            border-left: 8px solid #9F1213;
+            padding-left: 16px;
+            @include mobile(){
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        .pagination{
+            margin-top: 124px;
+            @include pad(){
+                margin-top: 80px;
+            }
+            @include mobile(){
+                margin-top: 64px;
+            }
+        }
+    }
+}
+.post{
+    margin-top: 32px;
+    @include pad(){
+        margin-top: 40px;
+    }
+    @include mobile(){
+        margin-top: 24px;
+    }
+    &-group{
+        display: flex;
+        margin: 0px -12px 0px;
+        @include mobile(){
+            flex-direction: column;
+            width: 100%;
+        }
+        img{
+            width: calc(100%/2 - 24px);
+            margin: 0px 12px 0px;
+            @include mobile(){
+                width: 100%;
+            }
+        }
+    }
+    &-content{
+        width: calc(100%/2 - 24px);
+        margin: 0px 12px 0px;
+        position: relative;
+        @include mobile(){
+            width: 100%;
+        }
+        h4{
+            font-size: 32px;
+            color: #650300;
+            @include pad(){
+                font-size: 24px;
+            }
+        }
+        .post-meta{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h6{
+                @include pad(){
+                    font-size: 16px;
+                }
+            }
+            span{
+                opacity: 0.7;
+            }
+        }
+        p{
+            margin-top: 16px;
+            font-size: 20px;
+            color: #555555;
+            @include pad(){
+                font-size: 16px;
+            }
+            @include mobile(){
+                display: none;
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 36px;
+            font-weight: 900;
+            color: #650300;
+            @include pad(){
+                font-size: 16px;
+                color: #555555;
+            }
+            @include mobile(){
+                display: none;
+            }
+        }
+        a:hover{
+            transform: translateY(-5px);
+        }
+    }
+    li{
+        margin-bottom: 60px;
+        @include pad(){
+            margin-bottom: 24px;
+        }
+    }
+}
+/* blog.scss end */

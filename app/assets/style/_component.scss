@@ -1,0 +1,33 @@
+/* component.scss */
+.pagination{
+    display: flex;
+    justify-content: center;
+    @include pad(){
+        margin-top: 40px;
+    }
+    .page-item{
+        border: 1px solid #555555;
+        a{
+            display: block;
+            color: #555555;
+            font-size: 18px;
+            padding: 11px 12px;
+            @include mobile(){
+                font-size: 16px;
+                padding: 11px 13px;
+            }
+        }
+        a:hover{
+            background-color: $black;
+            color: $white;
+        }
+        .page-active{
+            background-color: $black;
+            color: $white;
+        }
+        .page-next{
+            background-color: #F2F2F2;
+        }
+    }
+}
+/* component.scss end */
