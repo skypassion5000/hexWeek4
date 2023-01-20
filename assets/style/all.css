@@ -2036,8 +2036,8 @@ p {
       padding: 20px 6px;
       font-size: 19px;
       line-height: 27px; }
-    .location-card .btn-card a:hover {
-      background-color: #650300; }
+  .location-card .btn-card:hover {
+    background-color: #650300; }
 
 .location .card-shop {
   width: calc( 100% / 3 - 24px);
