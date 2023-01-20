@@ -1,0 +1,129 @@
+/* blog-detail.scss */
+.blog{
+    &-title{
+        margin-top: 24px;
+        @include pad(){
+            margin-top: 8px;
+        }
+        @include mobile(){
+            margin-top: 16px;
+        }
+        p{
+            span{
+                color: #AA0601;
+            }
+        }
+        .blog-tag{
+            @include mobile(){
+                font-size: 16px;
+            }
+        }
+    }
+    &-tag{
+        font-size: 24px;
+        font-weight: bold;
+        color: #AA0601;
+    }
+}
+.blog-detail{
+    padding-bottom: 80px;
+    @include mobile(){
+        padding-bottom: 64px;
+    }
+    &-content{
+        display: flex;
+        margin-left: -12px;
+        margin-right: -12px;
+        margin-top: 8px;
+    }
+    &-body{
+        width: calc(100% / 12 * 8 - 24px);
+        margin-left: 12px;
+        margin-right: 12px;
+        @include pad(){
+            width: calc(100% / 12 * 9 - 24px);
+        }
+        @include mobile(){
+            width: 100%;
+        }
+        h3{
+            font-weight: normal;
+            @include mobile(){
+                font-size: 24px;
+            }
+        }
+        h5{
+            font-weight: 500; //medium
+            @include mobile(){
+                font-size: 16px;
+            }
+        }
+        p{
+            text-align: justify;
+        }
+    }
+    &-aside{
+        width: calc(100% / 12 * 4 - 24px);
+        margin-left: 12px;
+        margin-right: 12px;
+        @include pad(){
+            width: calc(100% / 12 * 3 - 24px);
+        }
+        @include mobile(){
+            display: none;
+        }
+        h4{
+            color: #AA0601;
+            font-weight: bold;
+            span{
+                font-size: 48px;
+                vertical-align: text-top;
+            }
+        }
+        .blog-tag{
+            @include pad(){
+                font-size: 16px;
+            }
+        }
+    }
+}
+.share{
+    display: flex;
+    align-items: center;
+    margin-left: -8px;
+    margin-right: -8px;
+    // margin-top: 40px;
+    border-bottom: 1px solid #707070;
+    p{
+        font-weight: bold;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    img{
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    @include mobile(){
+        display: none;
+    }
+}
+.page-select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .page-select-previous{
+        display: flex;
+        color: #000;
+    }
+    .page-select-next{
+        display: flex;
+        color: #000;
+    }
+    @include mobile(){
+        display: none;
+    }
+}
+
+/* blog-detail.scss end */
